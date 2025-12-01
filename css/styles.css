@@ -1,0 +1,23 @@
+body{
+    background-color: #F0F8FF;
+}
+#navBar{
+  background-color: #2aabaf;
+  color: #F0F8FF;
+}
+header img {
+  width: 46px;
+  height: 40px;
+  align-self: center;
+  margin-right:20px;
+  margin-left: 20px;
+}
+header{
+  margin-bottom: 70px;
+}
+
+#resumen,
+#proyectos,
+#contacto {
+  scroll-margin-top: 80px;
+} 
