@@ -1,23 +1,144 @@
-body{
-    background-color: #F0F8FF;
-}
-#navBar{
-  background-color: #2aabaf;
-  color: #F0F8FF;
-}
-header img {
-  width: 46px;
-  height: 40px;
-  align-self: center;
-  margin-right:20px;
-  margin-left: 20px;
-}
-header{
-  margin-bottom: 70px;
+:root {
+    --bg-dark: #0f172a;
+    --bg-card: #1e293b;
+    --text-light: #e2e8f0;
+    --text-muted: #94a3b8;
+    --primary-blue: #3b82f6;
+    --secondary-blue: #0ea5e9;
+    --accent-blue: #60a5fa;
 }
 
+body {
+    background-color: var(--bg-dark);
+    color: var(--text-light);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Navbar */
+#navBar {
+    background-color: rgba(15, 23, 42, 0.95) !important; /* Dark background with slight transparency */
+    backdrop-filter: blur(10px);
+    border-bottom: 1px solid rgba(59, 130, 246, 0.1);
+}
+
+.navbar-brand, .nav-link {
+    color: var(--text-light) !important;
+}
+
+.nav-link:hover {
+    color: var(--primary-blue) !important;
+}
+
+.navbar-toggler {
+    border-color: var(--primary-blue);
+    background-color: var(--bg-card);
+}
+
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(59, 130, 246, 1)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
+/* Header & Logos */
+header img {
+    width: 46px;
+    height: 40px;
+    align-self: center;
+    margin-right: 20px;
+    margin-left: 20px;
+}
+
+header {
+    margin-bottom: 70px;
+}
+
+/* Typography & Headings */
+h1, h2, h3, h4, h5, h6 {
+    color: var(--primary-blue);
+}
+
+.text-primary {
+    color: var(--primary-blue) !important;
+}
+
+.text-muted {
+    color: var(--text-muted) !important;
+}
+
+.lead {
+    color: var(--text-light);
+}
+
+/* Cards */
+.card {
+    background-color: var(--bg-card);
+    border: 1px solid rgba(59, 130, 246, 0.1);
+    color: var(--text-light);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+    border-color: var(--primary-blue);
+}
+
+.list-group-item {
+    background-color: transparent;
+    color: var(--text-light);
+    border-color: rgba(255, 255, 255, 0.1);
+}
+
+/* Buttons */
+.btn-primary {
+    background-color: var(--primary-blue);
+    border-color: var(--primary-blue);
+}
+
+.btn-primary:hover {
+    background-color: var(--secondary-blue);
+    border-color: var(--secondary-blue);
+}
+
+.btn-light {
+    background-color: transparent;
+    color: var(--primary-blue);
+    border: 2px solid var(--primary-blue);
+}
+
+.btn-light:hover {
+    background-color: var(--primary-blue);
+    color: white;
+}
+
+/* Badges */
+.badge.bg-warning {
+    background-color: rgba(59, 130, 246, 0.2) !important;
+    color: var(--accent-blue) !important;
+    border: 1px solid var(--primary-blue);
+}
+
+.badge.bg-secondary {
+    background-color: rgba(148, 163, 184, 0.2) !important;
+    color: var(--text-muted) !important;
+}
+
+/* Icons */
+.bi-linkedin { color: #0077b5; }
+.bi-github { color: var(--text-light) !important; }
+.bi-envelope { color: var(--accent-blue) !important; }
+
+/* Scroll Margin */
 #resumen,
 #proyectos,
 #contacto {
-  scroll-margin-top: 80px;
-} 
+    scroll-margin-top: 80px;
+}
+
+/* Footer */
+footer {
+    padding: 2rem 0;
+    text-align: center;
+    color: var(--text-muted);
+    border-top: 1px solid rgba(255, 255, 255, 0.05);
+    margin-top: 3rem;
+}
